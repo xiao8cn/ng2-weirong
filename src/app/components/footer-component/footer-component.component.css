@@ -1,0 +1,10 @@
+.wr_footer{
+  position : fixed;
+  bottom : 0rem;
+  border-top : 1px solid lightgrey;
+}
+
+.wr_footer_bar{
+  margin: 1rem 0rem 1rem 0rem;
+}
+
