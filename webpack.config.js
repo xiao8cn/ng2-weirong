@@ -43,7 +43,6 @@ module.exports = {
     ],
     "styles": [
       "./src/styles.css",
-      "./node_modules/bootstrap/dist/css/bootstrap.min.css"
     ]
   },
   "output": {
@@ -79,8 +78,7 @@ module.exports = {
       },
       {
         "exclude": [
-          path.join(process.cwd(), "src/styles.css"),
-          path.join(process.cwd(), "node_modules/bootstrap/dist/css/bootstrap.min.css")
+          path.join(process.cwd(), "src/styles.css")
         ],
         "test": /\.css$/,
         "loaders": [
@@ -127,8 +125,7 @@ module.exports = {
       },
       {
         "include": [
-          path.join(process.cwd(), "src/styles.css"),
-          path.join(process.cwd(), "node_modules/bootstrap/dist/css/bootstrap.min.css")
+          path.join(process.cwd(), "src/styles.css")
         ],
         "test": /\.css$/,
         "loaders": ExtractTextPlugin.extract({
@@ -172,8 +169,7 @@ module.exports = {
       },
       {
         "include": [
-          path.join(process.cwd(), "src/styles.css"),
-          path.join(process.cwd(), "node_modules/bootstrap/dist/css/bootstrap.min.css")
+          path.join(process.cwd(), "src/styles.css")
         ],
         "test": /\.styl$/,
         "loaders": ExtractTextPlugin.extract({

@@ -1,4 +1,4 @@
-<h1>My First Attribute Directive</h1>
+<!--<h1>My First Attribute Directive</h1>
 <h4>Pick a highlight color</h4>
 <div>
   <input type="radio" name="colors" (click)="color='lightgreen'">Green
@@ -8,6 +8,23 @@
 <p [myHighlight]="color">Highlight me!</p>
 <p [myHighlight]="color" defaultColor="violet">
   Highlight me too!
-</p>
+</p>-->
 
-<app-footer-component></app-footer-component>
+<!-- 页面主体 -->
+<md-grid-list cols="4" rowHeight="3rem">
+  <!-- 页面头部 begin -->
+  <md-grid-tile colspan="4" rowspan="1">
+    <app-head-component></app-head-component>
+  </md-grid-tile>
+  <!-- end -->
+
+
+  <md-grid-tile colspan="4" rowspan="2">112</md-grid-tile>
+
+  <!-- 页面底部 begin -->
+  <md-grid-tile colspan="4" rowspan="1">
+    <app-footer-component></app-footer-component>
+  </md-grid-tile>
+  <!-- end -->
+
+</md-grid-list>

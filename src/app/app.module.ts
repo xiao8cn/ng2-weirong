@@ -6,18 +6,20 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { FooterComponentComponent } from './components/footer-component/footer-component.component';
 
-import { AlertModule } from 'ng2-bootstrap';
 import { HighLightDirective } from './directives/my-new-directive.directive';
 
+import { MaterialModule } from '@angular/material';
+import { HeadComponentComponent } from './components/head-component/head-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponentComponent,
-    HighLightDirective
+    HighLightDirective,
+    HeadComponentComponent
   ],
   imports: [
-    AlertModule.forRoot(),
+    MaterialModule,
     BrowserModule,
     FormsModule,
     HttpModule
