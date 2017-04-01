@@ -1,0 +1,9 @@
+.HolyGrail {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.HolyGrail-body {
+  flex: 1;
+}

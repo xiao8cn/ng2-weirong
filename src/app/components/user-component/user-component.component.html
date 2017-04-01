@@ -1,0 +1,32 @@
+<div class="userHeader">
+  <header>
+    <span>我的</span>
+  </header>
+
+  <main>
+    <md-grid-list cols="4">
+      <md-grid-tile colspan="1">
+
+      </md-grid-tile>
+
+      <md-grid-tile colspan="3">
+        <button md-button>立即注册</button>
+      </md-grid-tile>
+    </md-grid-list>
+  </main>
+</div>
+
+<form #userForm="ngForm" class="register" (ngSubmit)="onSubmit(userForm.value)">
+  <md-input-container>
+    <input mdInput [(ngModel)]="userDo.username" name='username' placeholder="用户名">
+  </md-input-container>
+  <md-input-container>
+    <input mdInput [(ngModel)]="userDo.password" name='password' placeholder="密码" type="password">
+  </md-input-container>
+  <!--<md-input-container>
+    <input #mobiles name="mobile" mdInput maxlength="11" placeholder="手机号">
+    <md-hint align="end">{{mobiles.value.length}} / 11</md-hint>
+  </md-input-container>-->
+  <button md-raised-button type="submit">注册</button>
+</form>
+

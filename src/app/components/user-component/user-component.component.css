@@ -1,0 +1,18 @@
+.register{
+  margin: 2rem;
+}
+
+.userHeader{
+  background-color: dodgerblue;
+  color: white;
+}
+
+.userHeader>header>span{
+  text-align: center;
+  font-size:1.2rem;
+  display: block;
+}
+
+.userHeader small{
+  vertical-align: middle;
+}

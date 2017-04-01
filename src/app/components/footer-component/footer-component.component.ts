@@ -29,5 +29,9 @@ export class FooterComponentComponent implements OnInit {
 
   }
 
+  gotoUserPage(){
+    console.log(123);
+  }
+
 
 }

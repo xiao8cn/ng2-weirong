@@ -295,7 +295,7 @@ module.exports = {
     "proxy": { // proxy URLs to backend development server
       '/api': 'http://localhost:3000'
     },
-    "host": "localhost",
+    "host": "192.168.1.129",
     "port" : "4200",
     "contentBase": path.join(__dirname, 'public'), // boolean | string | array, static file location
     "compress": true, // enable gzip compression

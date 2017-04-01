@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MdIconOption } from "../../entity/mdIconOption";
 
 @Component({
   selector: 'app-head-component',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeadComponentComponent implements OnInit {
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
+
   }
 
 }
