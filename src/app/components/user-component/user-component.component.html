@@ -1,32 +1,85 @@
-<div class="userHeader">
-  <header>
-    <span>我的</span>
+<div *ngIf="!login_clicked&&!registered">
+  <div class="userHeader">
+    <header>
+      <span>我的</span>
+    </header>
+    <main>
+      <md-grid-list cols="4">
+        <md-grid-tile colspan="4">
+          <button md-button (click)="login_click()">点击登录</button>
+        </md-grid-tile>
+      </md-grid-list>
+    </main>
+  </div>
+
+  <div>
+    <app-base-menu></app-base-menu>
+    <app-space-line></app-space-line>
+    <app-order-menu></app-order-menu>
+  </div>
+</div>
+
+<div *ngIf="login_clicked&&!registered" class="wr_login">
+  <header class="login_head">
+    <span>账户登录</span>
+    <span class="right" (click)="cancel()">返回</span>
   </header>
-
+  <app-space-line></app-space-line>
   <main>
-    <md-grid-list cols="4">
-      <md-grid-tile colspan="1">
+    <form #userForm="ngForm" class="wr_form" (ngSubmit)="onSubmit(userForm.value)">
+      <md-grid-list cols="4" rowHeight="50px">
+        <md-grid-tile colspan="4">
+          <md-input-container class="md-input-80">
+            <input mdInput [(ngModel)]="userDo.username" name='username' placeholder="用户名">
+          </md-input-container>
+        </md-grid-tile>
 
-      </md-grid-tile>
+        <md-grid-tile colspan="4">
+          <md-input-container class="md-input-80">
+            <input mdInput [(ngModel)]="userDo.password" name='password' placeholder="密码" type="password">
+          </md-input-container>
+        </md-grid-tile>
 
-      <md-grid-tile colspan="3">
-        <button md-button>立即注册</button>
-      </md-grid-tile>
-    </md-grid-list>
+        <md-grid-tile colspan="4">
+          <button md-raised-button class="center" type="submit" class="button-80" style="color: darkgrey;">登录</button>
+        </md-grid-tile>
+
+        <md-grid-tile colspan="1">
+          <button md-button class="center" (click)="newUserRegister()" style="color: darkgrey;">新用户注册</button>
+        </md-grid-tile>
+
+        <md-grid-tile colspan="2">
+        </md-grid-tile>
+
+        <md-grid-tile colspan="1">
+          <button md-button class="center" type="submit" style="color: darkgrey;">忘记密码</button>
+        </md-grid-tile>
+
+      </md-grid-list>
+    </form>
   </main>
 </div>
 
-<form #userForm="ngForm" class="register" (ngSubmit)="onSubmit(userForm.value)">
-  <md-input-container>
-    <input mdInput [(ngModel)]="userDo.username" name='username' placeholder="用户名">
-  </md-input-container>
-  <md-input-container>
-    <input mdInput [(ngModel)]="userDo.password" name='password' placeholder="密码" type="password">
-  </md-input-container>
-  <!--<md-input-container>
-    <input #mobiles name="mobile" mdInput maxlength="11" placeholder="手机号">
-    <md-hint align="end">{{mobiles.value.length}} / 11</md-hint>
-  </md-input-container>-->
-  <button md-raised-button type="submit">注册</button>
-</form>
 
+<form *ngIf="registered" #userForm="ngForm" class="wr_form" (ngSubmit)="onSubmit(userForm.value)">
+
+  <md-grid-list cols="4" rowHeight="50px">
+    <md-grid-tile colspan="4">
+      <md-input-container class="md-input-80">
+        <input mdInput [(ngModel)]="userDo.username" name='username' placeholder="用户名">
+      </md-input-container>
+    </md-grid-tile>
+
+    <md-grid-tile colspan="4">
+      <md-input-container class="md-input-80">
+        <input mdInput [(ngModel)]="userDo.password" name='password' placeholder="密码" type="password">
+      </md-input-container>
+    </md-grid-tile>
+
+    <md-grid-tile colspan="4">
+      <button md-raised-button class="center" type="submit" class="button-80" style="color: darkgrey;">注册</button>
+    </md-grid-tile>
+
+  </md-grid-list>
+
+</form>

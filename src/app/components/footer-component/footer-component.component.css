@@ -5,21 +5,11 @@
   width: 100%;
 }
 
-.wr_footer_bar{
-  margin: 1rem 0rem 1rem 0rem;
+
+.footer{
+  background-color: white;
 }
 
-.grid{
-  display: flex;
-
+.footer .top-line{
+  border-top:1px solid grey;
 }
-
-.grid-cell{
-  flex:1;
-}
-
-.grid-cell .center{
-  text-align: center;
-}
-
-

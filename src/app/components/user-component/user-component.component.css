@@ -1,5 +1,19 @@
-.register{
-  margin: 2rem;
+.wr_form{
+  background-color: white;
+  padding:1rem;
+}
+
+.wr_form .button-80{
+  width:80%;
+}
+
+.wr_form .center{
+  margin:auto;
+  display:table;
+}
+
+.wr_form .md-input-80{
+  width:80%;
 }
 
 .userHeader{
@@ -15,4 +29,19 @@
 
 .userHeader small{
   vertical-align: middle;
+}
+
+.login_head{
+  background-color: white;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.wr_login .right{
+  position: absolute;
+  right: 1rem;
+  top:0.65rem;
+  font-size: 1rem;
+  color: darkgrey;
 }

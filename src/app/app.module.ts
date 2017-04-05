@@ -13,6 +13,9 @@ import { MaterialModule } from '@angular/material';
 import { HeadComponentComponent } from './components/head-component/head-component.component';
 import { MdIconOptionDirective } from './directives/md-icon-option.directive';
 import { UserComponentComponent } from './components/user-component/user-component.component';
+import { BaseMenuComponent } from './components/base-menu/base-menu.component';
+import { OrderMenuComponent } from './components/order-menu/order-menu.component';
+import { SpaceLineComponent } from './components/space-line/space-line.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { UserComponentComponent } from './components/user-component/user-compone
     HighLightDirective,
     HeadComponentComponent,
     MdIconOptionDirective,
-    UserComponentComponent
+    UserComponentComponent,
+    BaseMenuComponent,
+    OrderMenuComponent,
+    SpaceLineComponent
   ],
   imports: [
     MaterialModule,

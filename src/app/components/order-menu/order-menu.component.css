@@ -1,0 +1,23 @@
+.order-menu{
+  background-color: white;
+}
+
+.order-menu .example-icon {
+  padding: 0 14px;
+}
+
+.order-menu .example-spacer {
+  flex: 1 1 auto;
+}
+
+.order-menu span{
+  margin: 1rem;
+}
+
+.order-menu .example-block{
+  display: block;
+}
+
+.order-menu .bottom-line{
+  border-bottom:1px solid whitesmoke;
+}
