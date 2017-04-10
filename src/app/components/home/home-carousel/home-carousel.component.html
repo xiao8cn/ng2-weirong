@@ -1,0 +1,9 @@
+<div class="home-carousel">
+  <ul>
+    <li *ngFor="let item of CarouseImages">
+      <a>
+        <img src="{{item.src}}" [ngStyle]="item">
+      </a>
+    </li>
+  </ul>
+</div>

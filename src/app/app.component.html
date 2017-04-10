@@ -1,25 +1,12 @@
-<!--<h1>My First Attribute Directive</h1>
-<h4>Pick a highlight color</h4>
-<div>
-  <input type="radio" name="colors" (click)="color='lightgreen'">Green
-  <input type="radio" name="colors" (click)="color='yellow'">Yellow
-  <input type="radio" name="colors" (click)="color='cyan'">Cyan
-</div>
-<p [myHighlight]="color">Highlight me!</p>
-<p [myHighlight]="color" defaultColor="violet">
-  Highlight me too!
-</p>-->
-
-
 <body class="HolyGrail">
 <!--<header>
   <app-head-component></app-head-component>
 </header>-->
 <main class="HolyGrail-body">
-  <app-user-component></app-user-component>
+  <!--<app-user-component></app-user-component>-->
+  <router-outlet></router-outlet>
 </main>
 <footer>
   <app-footer-component></app-footer-component>
 </footer>
 </body>
-

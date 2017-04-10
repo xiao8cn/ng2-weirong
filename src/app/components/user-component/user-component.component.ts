@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Http,Headers } from "@angular/http"
+import { Component,OnInit } from '@angular/core';
+import { Http } from "@angular/http"
 import { XfUsersDo } from "../../entity/XfUsersDo";
 
 import { ApiService } from '../../services/api.service';
